@@ -66,7 +66,7 @@ export default {
         axios('/api/Basic/Login/verify', {
           method: 'post',
           headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'application/x-www-form-urlencoded'
           },
           data: form
         }).then(response => {
