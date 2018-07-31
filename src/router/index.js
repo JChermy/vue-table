@@ -38,8 +38,8 @@ export const constantRouterMap = [
     path: '/example',
     component: Layout,
     redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'example' },
+    name: '示例',
+    meta: { title: '示例', icon: 'example' },
     children: [
       {
         path: 'table',
@@ -48,10 +48,10 @@ export const constantRouterMap = [
         meta: { title: 'Table', icon: 'table' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: _import('tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'userTable',
+        name: '用户表',
+        component: _import('userTable/index'),
+        meta: { title: '用户表', icon: 'table' }
       },
       {
         path: 'search',
@@ -64,18 +64,6 @@ export const constantRouterMap = [
         name: 'MessageBoard',
         component: _import('MessageBoard/index'),
         meta: { title: '留言板', icon: 'table' }
-      },
-      {
-        path: 'test',
-        name: 'test',
-        component: _import('test/index'),
-        meta: { title: '测试页面', icon: 'table' }
-      },
-      {
-        path: 'Errcorrect',
-        name: 'Errcorrect',
-        component: _import('Errcorrect/index'),
-        meta: { title: '纠错', icon: 'table' }
       }
     ]
   },
